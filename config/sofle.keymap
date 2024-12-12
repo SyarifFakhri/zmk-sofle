@@ -76,8 +76,8 @@
             bindings = <
 &kp LS(TILDE)  &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans         &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans         &trans         &kp SEMI      &kp LS(DQT)    &kp LS(LBRC)  &kp LS(RBRC)     &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans         &trans         &trans        &kp LS(COLON)  &kp LBKT      &kp RBKT         &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(PLUS)   &kp EQUAL      &kp SEMI      &kp LS(DQT)    &kp LS(LBRC)  &kp LS(RBRC)     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp MINUS      &kp LS(UNDER)  &trans        &kp LS(COLON)  &kp LBKT      &kp RBKT         &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans         &trans         &trans        &trans         &trans        &trans           &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
