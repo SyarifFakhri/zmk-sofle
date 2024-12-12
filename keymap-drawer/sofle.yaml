@@ -41,11 +41,11 @@ layers:
   - O
   - .
   - $$mdi:apple-keyboard-shift$$
+  - Z
   - X
   - C
   - D
   - V
-  - Z
   - $$mdi:arrow-right-bold$$
   - K
   - H
@@ -63,7 +63,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - nav
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&key_repeat'
   - $$mdi:backspace-reverse-outline$$
   nav:
   - {t: '$$mdi:transfer$$', type: trans}
