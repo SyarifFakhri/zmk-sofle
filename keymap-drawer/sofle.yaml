@@ -157,8 +157,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+ +
+  - {t: '=', s: +}
   - {t: ;, s: ':'}
   - Sft+ "
   - Sft+ {
@@ -170,8 +170,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '-', s: _}
+  - Sft+ _
   - {t: '$$mdi:transfer$$', type: trans}
   - 'Sft+ :'
   - {t: '[', s: '{'}
