@@ -37,6 +37,15 @@
         tap-ms = <30>;
     };
 
+    macros {
+        m_dbl_zz: m_dbl_zz {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp Z &kp Z>;
+            label = "M_DBL_ZZ";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -59,7 +68,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &kp LC(D)   &trans  &trans    &trans  &trans    &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp N0      &trans  &kp LEFT  &kp UP  &kp DOWN  &kp RIGHT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp DOLLAR  &trans  &trans    &trans  &trans    &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans      &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &m_dbl_zz   &trans  &trans    &trans  &trans    &trans
             >;
         };
 
