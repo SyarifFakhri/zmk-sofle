@@ -77,7 +77,7 @@
 &kp LS(TILDE)  &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &none  &none   &none  &none  &none  &none  &none
 &none          &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RPAR)     &none  &none   &none  &none  &none  &none  &none
 &kp LS(PLUS)   &kp EQUAL      &kp SEMI      &kp LS(DQT)    &kp LS(LBRC)  &kp LS(RBRC)     &none  &none   &none  &none  &none  &none  &none
-&kp MINUS      &kp LS(UNDER)  &none         &kp LS(COLON)  &kp LBKT      &kp RBKT         &none  &none   &none  &none  &none  &none  &none
+&kp MINUS      &kp LS(UNDER)  &kp COLON     &kp LS(COLON)  &kp LBKT      &kp RBKT         &none  &none   &none  &none  &none  &none  &none
 &none          &none          &none         &none          &none         &trans           &none  &trans  &none  &none  &none  &none
             >;
         };
