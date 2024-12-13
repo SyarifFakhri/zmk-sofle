@@ -60,9 +60,9 @@ layers:
   - nav
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
   - $$mdi:keyboard-esc$$
-  - symbol
+  - {t: symbol, h: '$$mdi:gesture-tap-hold$$'}
   - '&key_repeat'
   - $$mdi:backspace-reverse-outline$$
   nav:
