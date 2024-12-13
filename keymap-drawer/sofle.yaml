@@ -148,8 +148,8 @@ layers:
   - Sft+ ^
   - Sft+ &
   - Sft+ *
-  - Sft+ (
-  - Sft+ )
+  - Sft+ {
+  - Sft+ }
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -161,8 +161,8 @@ layers:
   - {t: '=', s: +}
   - {t: ;, s: ':'}
   - Sft+ "
-  - Sft+ {
-  - Sft+ }
+  - Sft+ (
+  - Sft+ )
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
