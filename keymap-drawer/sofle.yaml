@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: sofle/rev1}
 layers:
   LAYER0:
-  - {t: '`', s: '~'}
+  - $$mdi:keyboard-tab$$
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -14,44 +14,44 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - F
-  - P
-  - B
-  - $$mdi:arrow-down-bold$$
-  - J
-  - L
-  - U
-  - Y
-  - {t: ;, s: ':'}
-  - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-shift$$
-  - A
-  - R
-  - S
-  - T
-  - G
-  - $$mdi:arrow-left-bold$$
-  - M
-  - N
-  - E
-  - I
-  - O
-  - .
-  - $$mdi:apple-keyboard-control$$
-  - Z
-  - X
-  - C
-  - D
-  - V
-  - $$mdi:arrow-right-bold$$
-  - K
-  - H
+  - $$mdi:keyboard-esc$$
+  - {t: '''', s: '"'}
   - {t: ',', s: <}
   - {t: ., s: '>'}
+  - P
+  - Y
+  - $$mdi:arrow-down-bold$$
+  - F
+  - G
+  - C
+  - R
+  - L
   - {t: /, s: '?'}
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - O
+  - E
+  - U
+  - I
+  - $$mdi:arrow-left-bold$$
+  - D
+  - H
+  - T
+  - N
+  - S
+  - {t: '-', s: _}
+  - $$mdi:apple-keyboard-control$$
+  - {t: ;, s: ':'}
+  - Q
+  - J
+  - K
+  - X
+  - $$mdi:arrow-right-bold$$
+  - B
+  - M
+  - W
+  - V
+  - Z
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
   - adjust
@@ -61,7 +61,7 @@ layers:
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:gesture-tap-hold$$'}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:gesture-tap-hold$$'}
   - {t: symbol, h: '$$mdi:gesture-tap-hold$$'}
   - '&key_repeat'
   - $$mdi:backspace-reverse-outline$$
@@ -72,7 +72,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+ U
+  - Ctl+U
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -85,7 +85,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Ctl+ D
+  - Ctl+D
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-up-bold$$
@@ -131,12 +131,12 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   symbol:
-  - Sft+ ~
-  - Sft+ !
-  - Sft+ @
-  - 'Sft+ #'
-  - Sft+ $
-  - Sft+ %
+  - Sft+~
+  - Sft+!
+  - Sft+@
+  - Sft+#
+  - Sft+$
+  - Sft+%
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -144,25 +144,25 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Sft+ ^
-  - Sft+ &
-  - Sft+ *
-  - Sft+ {
-  - Sft+ }
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
+  - Sft+^
+  - Sft+&
+  - Sft+*
+  - Sft+{
+  - Sft+}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - Sft+ +
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Sft++
   - {t: '=', s: +}
   - {t: ;, s: ':'}
-  - Sft+ "
-  - Sft+ (
-  - Sft+ )
+  - Sft+"
+  - Sft+(
+  - Sft+)
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -171,9 +171,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '-', s: _}
-  - Sft+ _
+  - Sft+_
   - ':'
-  - 'Sft+ :'
+  - 'Sft+:'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
