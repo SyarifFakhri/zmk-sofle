@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
@@ -64,21 +65,21 @@
 
         nav {
             bindings = <
-&none   &none  &none  &none     &none  &none    &kp LC(U)   &none            &none      &none         &none      &none  &none
-&none   &none  &none  &none     &none  &none    &kp LC(D)   &none            &none      &kp UP_ARROW  &none      &none  &none
-&trans  &none  &none  &none     &none  &none    &kp N0      &none            &kp LEFT   &kp DOWN      &kp RIGHT  &none  &none
-&trans  &none  &none  &none     &none  &none    &kp DOLLAR  &none            &kp LC(U)  &kp ENTER     &kp LC(D)  &none  &none
-&none   &none  &none  &kp LALT  &none  &none    &m_dbl_zz   &kp RIGHT_SHIFT  &kp RCTRL  &none         &none      &none
+&kp ESCAPE  &none  &none  &none     &none  &none    &kp LC(U)   &none            &none      &none         &none      &none  &none
+&none       &none  &none  &none     &none  &none    &kp LC(D)   &none            &none      &kp UP_ARROW  &none      &none  &none
+&trans      &none  &none  &none     &none  &none    &kp N0      &none            &kp LEFT   &kp DOWN      &kp RIGHT  &none  &none
+&trans      &none  &none  &none     &none  &none    &kp DOLLAR  &none            &kp LC(U)  &kp ENTER     &kp LC(D)  &none  &none
+&none       &none  &none  &kp LALT  &none  &none    &m_dbl_zz   &kp RIGHT_SHIFT  &kp RCTRL  &none         &none      &none
             >;
         };
 
         symbol {
             bindings = <
-&kp LS(TILDE)  &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &none  &none   &none      &none     &none                 &none  &none
-&kp GRAVE      &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LBRC)  &kp LS(RBRC)     &none  &none   &none      &none     &none                 &none  &none
-&kp LS(PLUS)   &kp EQUAL      &kp SEMI      &kp LS(DQT)    &kp LS(LPAR)  &kp LS(RPAR)     &none  &none   &kp SLASH  &kp PIPE  &kp NON_US_BACKSLASH  &none  &none
-&kp MINUS      &kp LS(UNDER)  &kp COLON     &kp LS(COLON)  &kp LBKT      &kp RBKT         &none  &none   &none      &none     &none                 &none  &none
-&none          &none          &none         &none          &none         &trans           &none  &trans  &none      &none     &none                 &none
+&kp ESCAPE    &kp LS(EXCL)   &kp LS(AT)    &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &none  &none   &none      &none     &none                 &none  &none
+&kp GRAVE     &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)   &kp LS(LBRC)  &kp LS(RBRC)     &none  &none   &kp TILDE  &none     &none                 &none  &none
+&kp LS(PLUS)  &kp EQUAL      &kp SEMI      &kp LS(DQT)    &kp LS(LPAR)  &kp LS(RPAR)     &none  &none   &kp SLASH  &kp PIPE  &kp NON_US_BACKSLASH  &none  &none
+&kp MINUS     &kp LS(UNDER)  &kp COLON     &kp LS(COLON)  &kp LBKT      &kp RBKT         &none  &none   &none      &none     &none                 &none  &none
+&none         &none          &none         &none          &none         &trans           &none  &trans  &none      &none     &none                 &none
             >;
         };
 
