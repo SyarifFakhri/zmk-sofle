@@ -81,7 +81,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - Ctl+X
   - Ctl+C
   - Ctl+V
   - {t: '$$mdi:minus-circle-outline$$', type: none}
