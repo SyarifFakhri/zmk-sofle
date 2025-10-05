@@ -86,7 +86,7 @@ layers:
   - Ctl+V
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - Ctl+D
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&vim_replace_selection'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-up-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
