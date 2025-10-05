@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
@@ -53,6 +54,13 @@
             bindings = <&kp Z &kp Z>;
             label = "M_DBL_ZZ";
         };
+
+        vim_replace_selection: vim_replace_selection {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DQT &kp M &kp Y &kp FSLH &kp LC(R) &kp M &kp ENTER &kp LS(N) &kp G &kp N &kp C>;
+            label = "VIM_REPLACE_SELECTION";
+        };
     };
 
     keymap {
@@ -73,11 +81,11 @@
 
         nav {
             bindings = <
-&kp ESCAPE  &none      &none      &none      &none      &none        &kp LC(U)   &none            &none      &none         &none      &none  &none
-&none       &none      &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp ENTER    &kp LC(D)   &none            &none      &kp UP_ARROW  &none      &none  &none
-&none       &kp LC(A)  &none      &none      &none      &none        &kp N0      &none            &kp LEFT   &kp DOWN      &kp RIGHT  &none  &none
-&trans      &none      &none      &none      &none      &none        &kp DOLLAR  &none            &kp LC(U)  &kp ENTER     &kp LC(D)  &none  &none
-&none       &none      &none      &kp LALT   &none      &none        &m_dbl_zz   &kp RIGHT_SHIFT  &kp RCTRL  &none         &none      &none
+&kp ESCAPE  &none      &none      &none      &none      &none        &kp LC(U)   &none                   &none      &none         &none      &none  &none
+&none       &none      &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp ENTER    &kp LC(D)   &vim_replace_selection  &none      &kp UP_ARROW  &none      &none  &none
+&none       &kp LC(A)  &none      &none      &none      &none        &kp N0      &none                   &kp LEFT   &kp DOWN      &kp RIGHT  &none  &none
+&trans      &none      &none      &none      &none      &none        &kp DOLLAR  &none                   &kp LC(U)  &kp ENTER     &kp LC(D)  &none  &none
+&none       &none      &none      &kp LALT   &none      &none        &m_dbl_zz   &kp RIGHT_SHIFT         &kp RCTRL  &none         &none      &none
             >;
         };
 
