@@ -76,9 +76,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&vim_mark LS(A)'
+  - '&vim_mark LS(B)'
+  - '&vim_mark LS(C)'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+X
@@ -89,9 +89,9 @@ layers:
   - '&vim_replace_selection'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&vim_gotomark LS(A)'
+  - '&vim_gotomark LS(B)'
+  - '&vim_gotomark LS(C)'
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+A
   - {t: '$$mdi:minus-circle-outline$$', type: none}
