@@ -80,7 +80,7 @@ layers:
   - '&vim_mark LS(B)'
   - '&vim_mark LS(C)'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&vim_save'
   - Ctl+X
   - Ctl+C
   - Ctl+V
