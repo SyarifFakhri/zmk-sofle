@@ -67,8 +67,8 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   nav:
   - $$mdi:keyboard-esc$$
-  - '&vim_mark D'
-  - '&vim_gotomark D'
+  - '&vim_mark LS(D)'
+  - '&vim_gotomark LS(D)'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
