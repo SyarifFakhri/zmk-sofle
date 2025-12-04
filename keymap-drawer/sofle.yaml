@@ -69,7 +69,7 @@ layers:
   - $$mdi:keyboard-esc$$
   - '&vim_mark LS(D)'
   - '&vim_gotomark LS(D)'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&vim_find_selected'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+U
