@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_MOUSE_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 20    // 10
@@ -88,6 +89,13 @@
             bindings = <&kp COLON &kp W &kp A &kp RET>;
             label = "VIM_SAVE";
         };
+
+        vim_find_selected: vim_find_selected {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DQT &kp D &kp Y &kp FSLH &kp LC(R) &kp D>;
+            label = "VIM_FIND_SELECTED";
+        };
     };
 
     keymap {
@@ -108,11 +116,11 @@
 
         nav {
             bindings = <
-&kp ESCAPE  &vim_mark LS(D)  &vim_gotomark LS(D)  &none      &none      &none        &kp LC(U)   &none                   &none      &none         &vim_mark LS(A)      &vim_mark LS(B)      &vim_mark LS(C)
-&trans      &vim_save        &kp LC(X)            &kp LC(C)  &kp LC(V)  &kp ENTER    &kp LC(D)   &vim_replace_selection  &none      &kp UP_ARROW  &vim_gotomark LS(A)  &vim_gotomark LS(B)  &vim_gotomark LS(C)
-&trans      &kp LC(A)        &none                &none      &none      &none        &kp N0      &vim_register A         &kp LEFT   &kp DOWN      &kp RIGHT            &none                &none
-&trans      &none            &none                &none      &none      &none        &kp DOLLAR  &vim_register B         &kp LC(U)  &kp ENTER     &kp LC(D)            &none                &none
-&none       &none            &none                &kp LALT   &none      &none        &m_dbl_zz   &kp RIGHT_SHIFT         &kp RCTRL  &none         &none                &none
+&kp ESCAPE  &vim_mark LS(D)  &vim_gotomark LS(D)  &vim_find_selected  &none      &none        &kp LC(U)   &none                   &none      &none         &vim_mark LS(A)      &vim_mark LS(B)      &vim_mark LS(C)
+&trans      &vim_save        &kp LC(X)            &kp LC(C)           &kp LC(V)  &kp ENTER    &kp LC(D)   &vim_replace_selection  &none      &kp UP_ARROW  &vim_gotomark LS(A)  &vim_gotomark LS(B)  &vim_gotomark LS(C)
+&trans      &kp LC(A)        &none                &none               &none      &none        &kp N0      &vim_register A         &kp LEFT   &kp DOWN      &kp RIGHT            &none                &none
+&trans      &none            &none                &none               &none      &none        &kp DOLLAR  &vim_register B         &kp LC(U)  &kp ENTER     &kp LC(D)            &none                &none
+&none       &none            &none                &kp LALT            &none      &none        &m_dbl_zz   &kp RIGHT_SHIFT         &kp RCTRL  &none         &none                &none
             >;
         };
 
